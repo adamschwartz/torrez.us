@@ -90,7 +90,9 @@ a {
 }
 
     .top {
-        background: #4b4040 url("startup.png") center bottom;
+        background-color: #4b4040;
+        background-position: center center;
+        background-image: url("startup.png"), url("startup-small.png");
         background-size: cover;
         position: absolute;
         top: 0;
@@ -191,6 +193,12 @@ a {
                 position: absolute;
                 left: 0;
                 top: 0;
+            }
+
+            @media (max-width: 768px), (max-height: 768px) {
+                .avatar {
+                    background-image: url("et-small.png");
+                }
             }
 
             .name {
