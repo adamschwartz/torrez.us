@@ -92,7 +92,7 @@ a {
     .top {
         background-color: #4b4040;
         background-position: center center;
-        background-image: url("startup.png"), url("startup-small.png");
+        background-image: url("startup.png");
         background-size: cover;
         position: absolute;
         top: 0;
@@ -101,6 +101,12 @@ a {
         bottom: 13rem;
         padding: 4rem;
     }
+
+        @media (max-width: 768px), (max-height: 768px) {
+            .top {
+                background-image: url("startup-small.png");
+            }
+        }
 
         .top:after {
             content: "";
