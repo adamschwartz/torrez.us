@@ -85,6 +85,7 @@ a {
     .top {
         background-color: #363636;
         background-position: center center;
+        background-image: url("http://cdn2.hubspot.net/hub/330553/file-373891769-png/resources/startup.png?t=1389386515000");
         background-size: cover;
         position: absolute;
         top: 0;
@@ -94,7 +95,15 @@ a {
         padding: 4rem;
     }
 
+
         /*
+        @media (max-width: 768px), (max-height: 768px) {
+            .top {
+                background-image: url("http://cdn2.hubspot.net/hub/330553/file-373900434-png/resources/startup-small.png");
+            }
+        }
+        */
+
         .top:after {
             content: "";
             position: absolute;
@@ -104,7 +113,6 @@ a {
             bottom: 0;
             background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .6));
         }
-        */
 
         .top h2 {
             color: #EBEBEB;
